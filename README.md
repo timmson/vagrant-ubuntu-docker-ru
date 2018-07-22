@@ -10,5 +10,14 @@ Vagrant box with docker for ru users
 
 ## Use
 ```
-    vagrant box add timmson/ubuntu-docker-ru
+vagrant box add timmson/ubuntu-docker-ru
 ```
+
+## Features
+    * Based on Ubuntu 16.04 x64
+    * Europe/Moscow timezone
+    * Apt server is mirror.yandex.ru
+    * Apport is off
+    * "Colored" bash
+    * Ansible from ppa:ansible/ansible
+    * Docker/docker-Compose from download.docker.com 
