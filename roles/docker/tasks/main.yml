@@ -14,23 +14,17 @@
 
   - name: Install Docker packages
     apt:
-      name: "{{ item }}"
+      name: ['docker', 'docker-compose']
       update_cache: yes
       force: yes
       state: present
     become: yes
-    with_items:
-      - docker-ce
-      - python-pip
 
   - name: Install Docker Compose
     pip:
-      name: "{{ item }}"
+      name: ['docker', 'docker-compose']
       state: present
     become: yes
-    with_items:
-      - docker
-      - docker-compose
 
   - name: Adding current user Docker rights
     user:
